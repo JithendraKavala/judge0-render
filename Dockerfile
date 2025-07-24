@@ -1,9 +1,4 @@
-FROM judge0/judge0:latest-extra-dev
+FROM judge0/api:1.13.0
 
-# Ensure proper working directory
-WORKDIR /app
-
-# Optional: copy custom config if needed
-
-# Avoid using any sudo commands and start directly
-CMD ["./init"]
+# Optional: expose port (Render expects this)
+EXPOSE 3000
